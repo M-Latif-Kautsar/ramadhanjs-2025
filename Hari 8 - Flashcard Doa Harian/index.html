@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Doa Harian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex items-center justify-center h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-96 text-center">
+        <h1 class="text-xl font-bold text-blue-600">Flashcard Doa Harian</h1>
+        <p class="text-gray-500 mb-4">Klik tombol untuk melihat doa</p>
+
+        <div id="doaCard" class="p-4 bg-blue-50 rounded-lg shadow-md">
+            <p id="doaText" class="text-lg font-semibold text-gray-800">Klik tombol untuk memulai</p>
+            <p id="doaLatin" class="text-sm text-gray-600 mt-2"></p>
+            <p id="doaArti" class="text-sm text-gray-500 italic mt-2"></p>
+        </div>
+
+        <button onclick="nextDoa()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+            Next Doa
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
