@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Surah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-96 text-center">
+        <h1 class="text-xl font-bold text-blue-600">📖 Game Tebak Surah</h1>
+        <p class="text-gray-500 mb-4">Tebak surah berdasarkan potongan ayat</p>
+
+        <div id="ayatCard" class="p-4 bg-blue-50 rounded-lg shadow-md">
+            <p id="ayatText" class="text-lg font-semibold text-gray-800">Memuat ayat...</p>
+        </div>
+        <p id="ayatSurah" class="text-sm text-gray-600 mt-2"></p>
+        <input id="jawaban" type="text" placeholder="Masukkan nama surah..." 
+            class="mt-4 w-full px-3 py-2 border rounded-lg text-center">
+        
+        <button onclick="checkAnswer()" class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+            Cek Jawaban ✅
+        </button>
+
+        <p id="feedback" class="mt-3 text-lg font-semibold"></p>
+
+        <button onclick="getRandomAyat()" class="mt-4 bg-gray-400 text-white px-4 py-2 rounded-lg hover:bg-gray-500 transition">
+            Ganti Ayat 🔄
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
